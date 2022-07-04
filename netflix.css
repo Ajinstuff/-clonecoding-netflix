@@ -11,19 +11,19 @@ html,body {
     display: flex;
 }
 
-.page-all {
+#page-all {
     background-color : black;
 }
 
-.main-header {
+#main-header {
     position: relative;
 }
 
-.main-img {
+#main-img {
     max-width: 100vw;
 }
 
-.banner {
+#banner {
     width: 100vw;
     height: 10vh;
     position: fixed;
@@ -32,34 +32,49 @@ html,body {
     background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0,0,0,0));
 }
 
-.netflix-icon {
-    display: inline-block;
+#netflix-icon {
     width: 8vw;
     margin-left: 4vw;
     margin-top: 3vh;
 }
 
-.netflix-icon img {
+#netflix-icon img {
     width: 7vw;
 }
 
-.banner-menu {
-    display: inline-block;
-    position: fixed;
-    
+#netflix-icon img:hover {
+    cursor: pointer;
 }
 
-.banner-menu li {
+#banner-menu li {
     list-style: none;
     float: left;
     color: white;
-    margin-top: 1vh;
+    margin-top: 0.5vh;
     margin-left: 0.5vw;
     margin-right: 1vw;
     font-size: 15px;
+    transition: all 0.5s;
 }
 
-.search {
-    margin-left: 80vw;
-
+#banner-menu li:hover {
+    color: rgb(181, 180, 180);
+    cursor: pointer;
 }
+
+#searching-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5vw;
+    padding-left: 32vw;
+}
+
+#searching-tab i:hover {
+    cursor: pointer;
+}
+
+.whiteiconcolor {
+    color: white;
+}
+
