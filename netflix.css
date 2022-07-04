@@ -64,10 +64,11 @@ html,body {
 
 #searching-tab {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 5vw;
+    justify-content: center;
     padding-left: 32vw;
+    margin: 1.5vw;
+    
 }
 
 #searching-tab i:hover {
@@ -78,3 +79,18 @@ html,body {
     color: white;
 }
 
+#alarm-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+}
+
+#profile {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 1vw;
+    width: 3vw;
+    background-color: beige;
+}
