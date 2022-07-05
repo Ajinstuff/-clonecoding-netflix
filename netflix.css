@@ -11,16 +11,29 @@ html,body {
     display: flex;
 }
 
-#page-all {
-    background-color : black;
+.pos-rel {
+    position: relative;
 }
 
-#main-header {
-    position: relative;
+.pos-abs {
+    position: absolute;
+}
+
+#page-all {
+    height: 100vh;
+    background-color : black;
 }
 
 #main-img {
     max-width: 100vw;
+}
+
+.left-shadow {
+    width: 100vw;
+    height: 591px;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0.7), rgba(0,0,0,0));
+    left: 0%;
+    top: 0;
 }
 
 #banner {
@@ -46,11 +59,15 @@ html,body {
     cursor: pointer;
 }
 
+#banner-menu {
+    width: 67vw;
+    margin-top: 3vh;
+}
+
 #banner-menu li {
     list-style: none;
     float: left;
     color: white;
-    margin-top: 0.5vh;
     margin-left: 0.5vw;
     margin-right: 1vw;
     font-size: 15px;
@@ -64,9 +81,9 @@ html,body {
 
 #searching-tab {
     display: flex;
+    flex: right;
     align-items: center;
     justify-content: center;
-    padding-left: 32vw;
     margin: 1.5vw;
     
 }
@@ -87,10 +104,39 @@ html,body {
 }
 
 #profile {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
     margin: 1vw;
     width: 3vw;
     background-color: beige;
+}
+
+#profile-togle {
+    background-color: antiquewhite;
+    width: 3vw;
+}
+
+#main-film-title {
+    width: 30vw;
+    height: 15vw;
+    left: 5%;
+    top: 20%;
+}
+
+#main-film-title img {
+    width: 100%;
+    height: 80%;
+
+}
+
+#main-film-sum {
+    width: 40vw;
+    height: 15vh;
+    left: 5%;
+    top: 50%;
+}
+
+.film-explanation {
+    color: white;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px rgb(94, 93, 93);
+    line-height: 23px;
 }
